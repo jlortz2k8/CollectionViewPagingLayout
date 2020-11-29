@@ -158,7 +158,7 @@ public class CollectionViewPagingLayout: UICollectionViewLayout {
             attributesArray.append((page: Int(pageIndex), attributes: cellAttributes))
         }
         attributesCache = attributesArray
-        return attributesArray.map(\.attributes)
+        return attributesArray.map(\UICommand.attributes)
     }
     
     override public func invalidateLayout() {
